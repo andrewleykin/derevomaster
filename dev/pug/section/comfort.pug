@@ -1,0 +1,17 @@
+section.comfort#comfort
+  .comfort__wrap
+    .comfort__orders
+      h4.comfort__orders-title= content.comfort.orders.title
+      ul.comfort__orders-list
+        each item in content.comfort.orders.list
+          li.comfort__order-item= item
+    .comfort__main
+      h3.comfort__title= content.comfort.title
+      .comfort__row
+        .comfort__col
+          p.comfort__text= content.comfort.text['1']
+          p.comfort__text.accent= content.comfort.text['2']
+          p.comfort__text= content.comfort.text['3']
+        .comfort__col
+          p.comfort__text= content.comfort.text['4']
+          p.comfort__text= content.comfort.text['5']

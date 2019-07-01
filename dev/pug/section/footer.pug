@@ -1,0 +1,13 @@
+footer.footer#footer
+  .footer__wrap
+    .footer__logo
+      .footer__logo-img
+        img(src=content.general.logo.small.src alt=content.general.logo.alt)
+      .footer__logo-info
+        h1.footer__logo-name= content.general.logo.small.name
+        span.footer__logo-descr= content.general.logo.small.descr
+    .footer__social
+      h5.footer__social-title= content.general.social.title
+      each item in content.general.social.list
+        a.footer__social-link(href=item["link"] target="_blank")
+          +icon(item["icon"])

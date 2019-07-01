@@ -1,0 +1,15 @@
+section.production#production
+  .production__symbols
+    img(src=content.production.symbols.src alt=content.production.symbols.alt)
+  .production__wrap
+    .production__promo
+      a.production__promo-block(href="#")
+        span.production__promo-text= content.production.promo
+        .production__promo-play
+          +icon(content.general.icon.play)
+    .production__img
+      img(src=content.production.table.src alt=content.production.table.alt)
+    .production__info
+      h3.production__title= content.production.title
+      h4.production__name= content.production.name
+      p.production__text= content.production.text

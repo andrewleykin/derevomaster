@@ -1,0 +1,24 @@
+.menu
+  display flex
+  align-items center
+  @media (max-width breakpoint-lg)
+    justify-content flex-end
+  @media (max-width breakpoint-md)
+    flex-direction column
+    justify-content center
+    height 100%
+
+.menu__link
+  padding 25px
+  color tundora
+  font-size 21px
+  letter-spacing -0.35px
+  transition all .2s
+  &:hover
+    color black
+  @media (max-width breakpoint-xl)
+    padding 10px
+  @media (max-width breakpoint-md)
+    font-size 34px
+    padding 20px
+    font-weight bold

@@ -1,0 +1,111 @@
+.portfolio
+  margin-bottom 70px
+  @media (max-width breakpoint-md)
+    margin-bottom 40px
+
+.portfolio__title
+  text-align center
+  margin-bottom 80px
+  font-family font-ibm
+  font-size 40px
+  font-weight bold
+  line-height 55px
+  display block
+  @media (max-width breakpoint-lg)
+    margin-bottom 40px
+  @media (max-width breakpoint-sm)
+    margin-bottom 20px
+    font-size 32px
+    line-height 36px
+
+.portfolio__tabs
+  max-width 690px
+  display flex
+  align-items center
+  margin 0 auto 50px
+  @media (max-width breakpoint-lg)
+    margin-bottom 30px
+  @media (max-width breakpoint-sm)
+    display block
+
+.portfolio__tab
+  color rgba(mine-shaft, .7)
+  font-size 14px
+  width 100px
+  border-radius 30px
+  border 1px solid mine-shaft
+  width 100px
+  height 40px
+  display flex
+  align-items center
+  justify-content center
+  transition all .2s
+  cursor pointer
+  &+&
+    margin-left 20px
+  &.street
+    width 190px
+  &.cabinet,
+  &.interior
+    width 170px
+  &.active, &:hover
+    border-color mariner
+    color mariner
+  &.active
+    cursor default
+  @media (max-width breakpoint-sm)
+    display inline-flex
+    margin 0 10px 10px
+    width 140px
+    &.street,
+    &.cabinet,
+    &.interior
+      width 140px
+    &+&
+      margin-left 10px
+
+.portfolio__list
+  margin 0 auto
+  max-width 1200px
+  padding-bottom 60px
+  border-bottom 1px solid mercury
+  @media (max-width breakpoint-xl)
+    padding-bottom 20px
+  @media (max-width breakpoint-sm)
+    border-bottom none
+    padding 0 20px
+    max-width 100%
+
+.portfolio__item
+  display inline-block
+  width 100%
+  max-width 29%
+  margin 0 1.66% 30px
+  text-align center
+  &.hide
+    display none
+  @media (max-width breakpoint-md)
+    max-width 45%
+    margin-left 10px
+    margin-right 10px
+  @media (max-width breakpoint-sm)
+    width 100%
+    margin 0 0 10px
+    max-width 100%
+
+.portfolio__img
+  border-radius 16px
+  margin-bottom 20px
+  img
+    width 100%
+
+.portfolio__name
+  font-size 24px
+  font-weight 300
+  margin-bottom 10px
+
+.portfolio__material
+  color dodger-blue
+  font-size 10px
+  text-transform uppercase
+  letter-spacing 2px

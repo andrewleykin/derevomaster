@@ -1,0 +1,37 @@
+header.header#header
+  .header__wrap
+    .header__dots
+      img(src=content.header.dots.src alt=content.header.dots.alt)
+    .header__menu
+      .header__logo
+        img.desktop(src=content.general.logo.src alt=content.general.logo.alt)
+        img.mobile(src=content.general.logo.small.black alt=content.general.logo.alt)
+      .header__menu-block
+        include ../modules/menu
+      .header__mobile-block
+        a.header__phone(href=content.general.phone.link)= content.general.phone.text
+        .header__mobile-burger
+          span
+      .header__contacts
+        a.header__phone(href=content.general.phone.link)= content.general.phone.text
+        span.header__address= content.general.address
+    .header__slider
+      .header__slider-arrows
+        .header__slider-arrow.prev
+          +icon(content.general.icon.arrow)
+        .header__slider-arrow.next
+          +icon(content.general.icon.arrow)
+      .header__slider-list
+        each item in content.header.list
+          .header__slider-item
+            .header__slider-wrap
+              .header__slider-img
+                img(src=item["img"] alt=item["title"])
+              h2.header__slider-title= item["title"]
+              .header__slider-info
+                span.header__slider-descr= item["descr"]
+                .header__slider-actions
+                  a.header__slider-btn.js-scroll-to(href=content.header.btnLink)= item["btn"]
+                  .header__slider-info-icon
+                    img(src=content.general.icon.info.src alt=content.general.icon.info.alt)
+                  span.header__slider-info-text= item["info"]

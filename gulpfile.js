@@ -13,18 +13,18 @@ global.$ = {
     gp: require('gulp-load-plugins')()
 };
 
-$.path.task.forEach(function(taskPath) {
+$.path.task.forEach(function (taskPath) {
     require(taskPath)();
 });
 
 
 $.gulp.task('dev', $.gulp.series(
     'clean',
-    $.gulp.parallel('styles:dev', 'css:foundation', 'pug', 'libsJS:dev', 'js:copy', 'svg', 'img:dev', 'fonts','svg:copy')));
+    $.gulp.parallel('styles:dev', 'css:foundation', 'pug', 'libsJS:dev', 'js:copy', 'svg', 'img:dev', 'fonts', 'svg:copy')));
 
 $.gulp.task('build', $.gulp.series(
     'clean',
-    $.gulp.parallel('styles:build', 'css:foundation', 'pug', 'libsJS:build', 'js:copy', 'svg', 'img:build', 'fonts','svg:copy')));
+    $.gulp.parallel('styles:build', 'css:foundation', 'pug', 'libsJS:build', 'js:copy', 'svg', 'img:dev', 'fonts', 'svg:copy')));
 
 
 $.gulp.task('default', $.gulp.series(

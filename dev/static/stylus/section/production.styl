@@ -1,0 +1,145 @@
+.production
+  position relative
+  margin-bottom 170px
+  @media (max-width breakpoint-md)
+    margin-bottom 40px
+  @media (max-width breakpoint-sm)
+    margin-bottom 20px
+
+.production__symbols
+  position absolute
+  right -18px
+  top -125px
+  @media (max-width breakpoint-xxl)
+    display none
+
+.production__wrap
+  display flex
+  width 100%
+  height 100vh
+  min-height 700px
+  max-width 75%
+  margin-top -110px
+  position relative
+  @media (max-width breakpoint-xl)
+    max-width 100%
+  @media (max-width breakpoint-md)
+    flex-direction column-reverse
+    height auto
+    min-height auto
+    margin-top 0
+    max-width 100%
+
+.production__img
+  position absolute
+  right -170px
+  bottom -100px
+  width auto
+  z-index -1
+  @media (max-width breakpoint-md)
+    position relative
+    right 0
+    bottom 0
+    max-width 50%
+    margin 0 auto 20px
+  @media (max-width breakpoint-sm)
+    margin-top 10px
+
+.production__promo
+  width 100%
+  max-width 40.28%
+  background url('../img/content/production/img.jpg') center no-repeat
+  background-size cover
+  position relative
+  display flex
+  justify-content flex-end
+  align-items flex-end
+  @media (max-width breakpoint-md)
+    background none
+    max-width 100%
+
+.production__promo-block
+  display flex
+  align-items center
+  width 100%
+  max-width 400px
+  height 160px
+  cursor pointer
+  margin-bottom 110px
+  margin-right -160px
+  @media (max-width breakpoint-md)
+    margin 0 auto
+
+.production__promo-text
+  background-color downriver
+  width 100%
+  max-width 240px
+  height 100%
+  color white
+  font-size 17px
+  font-weight bold
+  padding 0 35px
+  display flex
+  align-items center
+
+.production__promo-play
+  height 100%
+  width 100%
+  max-width 160px
+  display flex
+  align-items center
+  justify-content center
+  position relative
+  background-color mariner
+  &:after
+    content ''
+    display block
+    position absolute
+    top 50%
+    left 50%
+    transform translate(-50%, -50%)
+    width 72px
+    height 72px
+    border-radius 50%
+    border 1px solid white
+  .icon
+    width 17px
+    height 20px
+    fill white
+
+.production__info
+  padding 100px 110px
+  @media (max-width breakpoint-xxl)
+    padding 50px
+  @media (max-width breakpoint-sm)
+    padding 0 20px
+    text-align center
+
+.production__title
+  font-size 20px
+  font-weight bold
+  margin-bottom 80px
+  @media (max-width breakpoint-xxl)
+    margin-bottom 30px
+  @media (max-width breakpoint-sm)
+    margin-bottom 10px
+    font-size 18px
+
+.production__name
+  font-size 60px
+  font-weight bold
+  line-height 60px
+  margin-bottom 40px
+  max-width 500px
+  @media (max-width breakpoint-sm)
+    margin-bottom 10px
+    font-size 32px
+
+.production__text
+  font-size 22px
+  font-weight 300
+  line-height 34px
+  max-width 560px
+  @media (max-width breakpoint-sm)
+    font-size 18px
+    line-height 24px

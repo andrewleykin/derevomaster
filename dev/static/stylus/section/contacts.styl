@@ -1,0 +1,144 @@
+.contacts
+  background-color dark-fern
+
+.contacts__wrap
+  width 100%
+  max-width 86.2%
+  margin-left auto
+  background-color white
+  display flex
+  @media (max-width breakpoint-xl)
+    max-width 100%
+  @media (max-width breakpoint-md)
+    display block
+    max-width 100%
+
+.contacts__info
+  width 100%
+  max-width 720px
+  padding 100px 110px 100px 20px
+  @media (max-width breakpoint-xl)
+    padding 20px
+
+.contacts__info-wrap
+  max-width 380px
+  margin-left auto
+  @media (max-width breakpoint-xl)
+    max-width 100%
+
+.contacts__title
+  font-size 40px
+  font-weight bold
+  margin-bottom 60px
+  @media (max-width breakpoint-md)
+    font-size 28px
+    margin-bottom 30px
+  @media (max-width breakpoint-sm)
+    margin-bottom 20px
+    text-align center
+
+.contacts__block
+  display flex
+  &+&
+    margin-top 40px
+  @media (max-width breakpoint-md)
+    &+&
+      margin-top 15px
+  @media (max-width breakpoint-sm)
+    &+&
+      margin-top 10px
+
+.contacts__icon
+  margin-right 15px
+  .icon
+    fill mariner
+    width 20px
+    height 20px
+  @media (max-width breakpoint-md)
+    margin-right 10px
+
+.contacts__text
+  max-width 270px
+  font-size 20px
+  font-weight 300
+  line-height 28px
+  &.link
+    transition all .2s
+    &:hover
+      color black
+
+.contacts__form
+  margin-top 85px
+  @media (max-width breakpoint-md)
+    margin-top 30px
+
+.contacts__form-title
+  font-family font-ibm
+  font-size 30px
+  font-weight bold
+  margin-bottom 30px
+  @media (max-width breakpoint-md)
+    margin-bottom 15px
+  @media (max-width breakpoint-sm)
+    margin-bottom 10px
+    text-align center
+    font-size 24px
+
+.contacts__form-group
+  &.invalid
+    .contacts__form-input
+      border-color cardinal
+  &+&
+    margin-top 25px
+  @media (max-width breakpoint-md)
+    &+&
+      margin-top 15px
+
+.contacts__form-label
+  cursor pointer
+  display block
+  margin-bottom 15px
+  font-size 16px
+  letter-spacing -0.27px
+
+.contacts__form-input
+  display block
+  width 100%
+  height 50px
+  border-radius 5px
+  border 1px solid mercury
+  padding 0 20px
+  &.textarea
+    height 100px
+    padding 20px
+
+.contacts__form-btn
+  margin-top 30px
+  width 150px
+  height 50px
+  display flex
+  justify-content center
+  align-items center
+  border-radius 25px
+  border 1px solid dodger-blue
+  background-color mariner
+  color white
+  font-size 16px
+  font-weight bold
+  letter-spacing -0.27px
+  cursor pointer
+  transition all .2s
+  &:hover
+    color dodger-blue
+    background-color white
+  @media (max-width breakpoint-md)
+    margin-top 10px
+  @media (max-width breakpoint-sm)
+    margin 10px auto 0
+
+.contacts__map
+  width 100%
+  iframe
+    height 100%
+  @media (max-width breakpoint-md)
+    height 400px

@@ -1,6 +1,223 @@
 {
-  "content": {
-    " " : " ",
-    " " : " "
+  "general": {
+    "logo": {
+      "src": "app/img/general/logo.png",
+      "alt": "ДеревоМастер",
+      "small": {
+        "src": "app/img/general/logo-small.png",
+        "name": "ДеревоМастер",
+        "descr": "Изготовление мебели на заказ",
+        "black": "app/img/general/logo-small-black.png"
+      }
+    },
+    "phone": {
+      "text": "+7.989.57.40",
+      "link": "tel:+79895740"
+    },
+    "address": "Московская область, г. Клин Ленинградское шоссе, 88 км",
+    "social": {
+      "title": "Мы в социальных сетях",
+      "list": [
+        {
+          "icon": "fb",
+          "link": "#"
+        },
+        {
+          "icon": "tw",
+          "link": "#"
+        }
+      ]
+    },
+    "icon": {
+      "info": {
+        "src": "app/img/general/info.png",
+        "alt": "info icon"
+      },
+      "arrow": "arrow",
+      "play": "play",
+      "address": "address",
+      "phone": "phone"
+    }
+  },
+  "header": {
+    "dots": {
+      "src": "app/img/content/header/dots.png",
+      "alt": "dots background"
+    },
+    "btnLink": "#order",
+    "list": [
+      {
+        "title": "ПРОИЗВОДСТВО МЕБЕЛИ ИЗ ДЕРЕВА НА ЗАКАЗ",
+        "img": "app/img/content/header/1.png",
+        "descr": "Индивидуальное и мелкосерийное производство изделий из дерева",
+        "btn": "РАЗМЕСТИТЬ ЗАКАЗ",
+        "info": "Мы работаем  с материалами из дуба и других ценных пород, которые можно выбрать в качестве исходного материала."
+      },
+      {
+        "title": "ПРОИЗВОДСТВО МЕБЕЛИ ИЗ ДЕРЕВА НА ЗАКАЗ 2",
+        "img": "app/img/content/header/1.png",
+        "descr": "Индивидуальное и мелкосерийное производство изделий из дерева 2",
+        "btn": "РАЗМЕСТИТЬ ЗАКАЗ",
+        "info": "Мы работаем  с материалами из дуба и других ценных пород, которые можно выбрать в качестве исходного материала. 2"
+      }
+    ] 
+  },
+  "features": ["Делаем быстро", "Делаем качественно", "Делаем все"],
+  "materials": {
+    "title": "Материалы",
+    "link": "Подробнее",
+    "list": [
+      {
+        "name": "Брус обрезной",
+        "text": "Обрезной брус – это пиломатериал, без которого не обходится реализация любого строительного проекта.",
+        "link": "#",
+        "img": "app/img/content/materials/1.jpg"
+      },
+      {
+        "name": "Брус обрезной 2",
+        "text": "Обрезной брус – это пиломатериал, без которого не обходится реализация любого строительного проекта. 2",
+        "link": "#",
+        "img": "app/img/content/materials/2.jpg"
+      }
+    ]
+  },
+  "production": {
+    "promo": "Посмотреть короткий ролик про производство",
+    "title": "Производство",
+    "name": "ЧПУ станки для любых задач",
+    "text": "Наше производство позволяет изготавливать мебель любой сложности...Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute",
+    "table": {
+      "src": "app/img/content/production/table.png",
+      "alt": "table image"
+    },
+    "symbols": {
+      "src": "app/img/content/production/symbols.png",
+      "alt": "symbols"
+    }
+  },
+  "comfort": {
+    "orders": {
+      "title": "Обычно у нас размещают такие заказы",
+      "list": ["Кабинет руководителя","Интерьерный декор","Уличная мебель","Детская мебель","Фасадный декор"]
+    },
+    "title": "Почему дизайнерам удобно работать с нами?",
+    "text": {
+      "1": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+      "2": "Мы легко масштабируемся под необходимые задачи. Это существено повышает качество работы и скорость выполнения. ",
+      "3": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat.",
+      "4": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse hendrerit cursus dolor vel volutpat. Morbi aliquet magna at fringilla tempor. Curabitur nec accumsan arcu. Aliquam pharetra scelerisque convallis. Morbi hendrerit justo et justo porta auctor. Phasellus ante velit, ultricies vel tincidunt et, accumsan vel nunc.",
+      "5": "Etiam vehicula tincidunt semper. Duis sed leo eu mi interdum dictum. Fusce tincidunt magna lacus. Nulla risus risus, accumsan nec purus quis, volutpat ultrices purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut tempor urna vel nulla tincidunt, nec finibus mauris ultricies. Vivamus non turpis egestas, ullamcorper est non, mattis nisi."
+    }
+  },
+  "order": {
+    "img": "app/img/content/order/img.png",
+    "title": "Закажите расчет стоимости производства!",
+    "descr": "Оставьте свои данные и наш менеджер свяжется с вами",
+    "form": {
+      "action": "app/mail/sendOrder.php",
+      "btn": "Заказать",
+      "list": [
+        {
+          "class": "name",
+          "label": "ФИО",
+          "id": "order-name",
+          "name": "name",
+          "data": "name"
+        },
+        {
+          "class": "phone",
+          "label": "Телефон",
+          "id": "order-phone",
+          "name": "phone",
+          "data": "phone"
+        },
+        {
+          "class": "email",
+          "label": "Email",
+          "id": "order-email",
+          "name": "email",
+          "data": "email"
+        }
+      ]
+    }
+  },
+  "portfolio": {
+    "title": "Портфолио",
+    "tabs": [
+      {
+        "text": "Все",
+        "tag": "all"
+      },
+      {
+        "text": "Уличная мебель",
+        "tag": "street"
+      },
+      {
+        "text": "Кабинет",
+        "tag": "cabinet"
+      },
+      {
+        "text": "Интерьер",
+        "tag": "interior"
+      }
+    ],
+    "list": [
+      {
+        "img": "app/img/content/portfolio/1.jpg",
+        "name": "Журнальный столик",
+        "material": "клееный брус / каленое стекло",
+        "tag": "street,interior"
+      },
+      {
+        "img": "app/img/content/portfolio/2.jpg",
+        "name": "Подставка для iPhone",
+        "material": "цельное дерево",
+        "tag": "cabinet"
+      },
+      {
+        "img": "app/img/content/portfolio/3.jpg",
+        "name": "Тумба для рукомойника",
+        "material": "Клееный брус",
+        "tag": "interior"
+      },
+      {
+        "img": "app/img/content/portfolio/4.jpg",
+        "name": "Коридорная вешалка",
+        "material": "ОСТАТКИ ПИЛОМАТЕРИАЛОВ",
+        "tag": "cabinet"
+      },
+      {
+        "img": "app/img/content/portfolio/5.jpg",
+        "name": "Дачная скамейка",
+        "material": "Клееный брус",
+        "tag": "street"
+      },
+      {
+        "img": "app/img/content/portfolio/6.jpg",
+        "name": "Настенное панно",
+        "material": "клееный брус / каленое стекло",
+        "tag": "interior"
+      }
+    ]
+  },
+  "contacts": {
+    "title": "Контактная информация",
+    "form": {
+      "action": "app/mail/sendContacts.php",
+      "title": "Отправить сообщение",
+      "theme": {
+        "label": "Тема",
+        "id": "theme",
+        "name": "theme",
+        "data": "text"
+      },
+      "message": {
+        "label": "Собщение",
+        "id": "message",
+        "name": "message",
+        "data": "text"
+      },
+      "btn": "Отправить"
+    }
   }
 }

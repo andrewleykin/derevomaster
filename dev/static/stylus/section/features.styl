@@ -1,0 +1,31 @@
+.features
+  background-color alto
+  padding 90px 0 180px
+  @media (max-width breakpoint-md)
+    padding 30px 20px
+  @media (max-width breakpoint-sm)
+    padding 20px
+
+.features__list
+  display flex
+  justify-content space-between
+  width 55%
+  margin 0 auto
+  @media (max-width breakpoint-xl)
+    width 80%
+  @media (max-width breakpoint-md)
+    width 100%
+  @media (max-width breakpoint-sm)
+    flex-direction column
+    align-items center
+    text-align center
+
+.features__item
+  color black
+  font-family font-ibm
+  font-size 29px
+  @media (max-width breakpoint-md)
+    font-size 18px
+  @media (max-width breakpoint-sm)
+    &+&
+      margin-top 5px

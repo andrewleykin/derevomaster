@@ -1,0 +1,15 @@
+.form__group
+  position relative
+
+.form__input
+  &:focus
+    & + .form__label
+      opacity 0
+
+.form__label
+  position absolute
+  left 0
+  top 0
+  transition all .2s
+  &.hide
+    opacity 0

@@ -1,0 +1,13 @@
+section.portfolio#portfolio
+  .portfolio__wrap
+    h2.portfolio__title= content.portfolio.title
+    .portfolio__tabs
+      each item in content.portfolio.tabs
+        span.portfolio__tab(class=item["tag"] data-tag=item["tag"])=item["text"]
+    .portfolio__list
+      each item in content.portfolio.list
+        .portfolio__item(data-tag=item["tag"])
+          .portfolio__img
+            img(src=item["img"] alt=item["name"])
+          h4.portfolio__name= item["name"]
+          span.portfolio__material= item["material"]

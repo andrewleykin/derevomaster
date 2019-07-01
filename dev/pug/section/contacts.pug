@@ -1,0 +1,25 @@
+section.contacts#contacts
+  .contacts__wrap
+    .contacts__info
+      .contacts__info-wrap
+        h2.contacts__title= content.contacts.title
+        .contacts__block
+          .contacts__icon
+            +icon(content.general.icon.address)
+          span.contacts__text= content.general.address
+        .contacts__block
+          .contacts__icon
+            +icon(content.general.icon.phone)
+          a.contacts__text.link(href=content.general.phone.link)= content.general.phone.text
+        form.contacts__form.form(action=content.contacts.form.action data-validation method="POST")
+          h3.contacts__form-title= content.contacts.form.title
+          .contacts__form-group
+            label.contacts__form-label(for=content.contacts.form.theme.id)= content.contacts.form.theme.label
+            input.contacts__form-input(type="text" id=content.contacts.form.theme.id name=content.contacts.form.theme.name data-name=content.contacts.form.theme.data)
+          .contacts__form-group
+            label.contacts__form-label(for=content.contacts.form.message.id)= content.contacts.form.message.label
+            textarea.contacts__form-input.textarea(id=content.contacts.form.message.id name=content.contacts.form.message.name data-name=content.contacts.form.message.data)
+          button.contacts__form-btn(type="submit")
+            span= content.contacts.form.btn
+    .contacts__map
+      iframe(src="https://yandex.ru/map-widget/v1/?um=constructor%3Aea5934b9002559f0aae138f2283685f813c1824899fc1c8047039c888f9c4803&amp;source=constructor" width="100%" frameborder="0")

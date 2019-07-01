@@ -1,0 +1,26 @@
+section.materials#materials
+  .materials__wrap
+    .materials__slider
+      .materials__view
+        .materials__view-slider
+          each item in content.materials.list
+            .materials__view-item
+              img(src=item["img"] alt=item["name"])
+        .materials__slider-info
+          span.materials__slider-current
+          span.materials__slider-all
+      .materials__info
+        h2.materials__title= content.materials.title
+        .materials__info-slider
+          each item in content.materials.list
+            .materials__info-item
+              h3.materials__info-name= item["name"]
+              p.materials__info-text= item["text"]
+              .materials__info-img
+                img(src=item["img"] alt=item["name"])
+              a.materials__info-link(href=item["link"] target="_blank")= content.materials.link
+        .materials__arrows
+          .materials__arrow.prev
+            +icon(content.general.icon.arrow)
+          .materials__arrow.next
+            +icon(content.general.icon.arrow)

@@ -1,0 +1,14 @@
+section.order#order
+  .order__wrap
+    .order__info
+      .order__img
+        img(src=content.order.img alt=content.order.title)
+      h2.order__title= content.order.title
+      span.order__descr= content.order.descr
+    form.order__form.form(action=content.order.form.action data-validation method="POST")
+      each item in content.order.form.list
+        .form__group(class=item["class"])
+          input.form__input.order__input(type="text" id=item["id"] name=item["name"] data-name=item["data"])
+          label.form__label.order__label(for=item["id"])= item["label"]
+      button.order__btn(type="submit")
+        span= content.order.form.btn

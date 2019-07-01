@@ -1,0 +1,192 @@
+.materials
+  position relative
+  &:after
+    content ''
+    display block
+    width 100%
+    max-width 11%
+    height 100%
+    background-color anzac
+    position absolute
+    right 0
+    top 0
+  @media (max-width breakpoint-xl)
+    &:after
+      display none
+  @media (max-width breakpoint-sm)
+    text-align center
+    margin-bottom 30px
+
+.materials__wrap
+  width 100%
+  max-width 89%
+  position relative
+  z-index 0
+  padding 60px 0 180px
+  &:before,&:after
+    content ''
+    display block
+    width 50%
+    height 100%
+    position absolute
+    bottom 0
+    top -110px
+    z-index -1
+  &:before
+    left 0
+    background-color mariner
+  &:after
+    right 0
+    background-color white
+  @media (max-width breakpoint-xl)
+    padding-top 40px
+    max-width 100%
+  @media (max-width breakpoint-md)
+    padding 30px 0
+    &:before,&:after
+      display none
+  @media (max-width breakpoint-sm)
+    padding-bottom 0
+
+.materials__title
+  font-size 20px
+  font-weight bold
+  margin-bottom 80px
+  @media (max-width breakpoint-xl)
+    margin-bottom 40px
+  @media (max-width breakpoint-sm)
+    margin-bottom 20px
+
+.materials__slider
+  display flex
+  justify-content flex-end
+  padding-right 170px
+  padding-left 20px
+  @media (max-width breakpoint-xxl)
+    padding 0 20px
+    justify-content space-between
+  @media (max-width breakpoint-md)
+    display block
+
+.materials__view
+  width 100%
+  max-width 530px
+  margin-right 130px
+  padding-top 10px
+  @media (max-width breakpoint-xxl)
+    margin-right 50px
+  @media (max-width breakpoint-xl)
+    max-width 400px
+  @media (max-width breakpoint-md)
+    display none
+
+.materials__view-slider
+  margin-bottom 20px
+  @media (max-width breakpoint-xl)
+    img
+      height 400px
+
+.materials__slider-info
+  color white
+
+.materials__slider-current
+  font-size 40px
+  letter-spacing -0.68px
+
+.materials__slider-all
+  font-size 20px
+  font-weight 300
+  letter-spacing -0.34px
+
+.materials__info
+  width 100%
+  max-width 450px
+
+.materials__info-slider
+  margin-bottom 110px
+  @media (max-width breakpoint-xl)
+    margin-bottom 50px
+  @media (max-width breakpoint-md)
+    margin-bottom 20px
+  @media (max-width breakpoint-sm)
+    margin-bottom 10px
+
+.materials__info-name
+  font-family font-ibm
+  font-size 60px
+  font-weight bold
+  margin-bottom 25px
+  max-width 300px
+  @media (max-width breakpoint-md)
+    font-size 48px
+    max-width 100%
+  @media (max-width breakpoint-sm)
+    margin-bottom 10px
+
+.materials__info-text
+  font-size 22px
+  font-weight 300
+  line-height 34px
+  margin-bottom 50px
+  @media (max-width breakpoint-md)
+    margin-bottom 20px
+  @media (max-width breakpoint-sm)
+    margin-bottom 10px
+
+.materials__info-img
+  display none
+  max-width 50%
+  margin-bottom 20px
+  @media (max-width breakpoint-md)
+    display block
+  @media (max-width breakpoint-sm)
+    margin 0 auto 10px
+
+.materials__info-link
+  border-radius 40px
+  border 1px solid dodger-blue
+  background-color mariner
+  color white
+  font-size 16px
+  letter-spacing -0.27px
+  width 140px
+  height 60px
+  display flex
+  justify-content center
+  align-items center
+  transition all .2s
+  &:hover
+    background-color transparent
+    color mariner
+  @media (max-width breakpoint-sm)
+    margin 0 auto
+
+.materials__arrows
+  display flex
+  align-items center
+  @media (max-width breakpoint-sm)
+    justify-content center
+
+.materials__arrow
+  width 40px
+  height 40px
+  border 1px solid alto 
+  border-radius 50%
+  display flex
+  align-items center
+  justify-content center
+  cursor pointer
+  transition all .2s
+  &:hover
+    background-color dodger-blue
+    border-color dodger-blue
+    .icon
+      fill white
+  &+&
+    margin-left 10px
+  .icon
+    width 9px
+    height 17px
+    fill dodger-blue
+  &.prev
+    transform rotate(180deg)
