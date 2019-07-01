@@ -3,7 +3,7 @@ section.production#production
     img(src=content.production.symbols.src alt=content.production.symbols.alt)
   .production__wrap
     .production__promo
-      a.production__promo-block(href="#")
+      a.production__promo-block(href="#promo-video")
         span.production__promo-text= content.production.promo
         .production__promo-play
           +icon(content.general.icon.play)
@@ -13,3 +13,7 @@ section.production#production
       h3.production__title= content.production.title
       h4.production__name= content.production.name
       p.production__text= content.production.text
+  .production__promo-modal.remodal(data-remodal-id="promo-video")
+    button(data-remodal-action="close" class="remodal-close")
+    .production__promo-modal-wrap
+      iframe(width="100%" src="https://www.youtube.com/embed/RfN5UPUo8Mw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
